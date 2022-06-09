@@ -759,9 +759,6 @@
               >
                 <div class="item">
                   <div class="reviews-item">
-                    <div class="image">
-                      <img src="images/rev1.png" alt="" />
-                    </div>
                     <div class="info">
                       <div class="name">Sanjar Abduraimov</div>
                       <div class="company">Backend developer</div>
@@ -778,9 +775,6 @@
 
                 <div class="item">
                   <div class="reviews-item">
-                    <div class="image">
-                      <img src="images/rev1.png" alt="" />
-                    </div>
                     <div class="info">
                       <div class="name">Abdujalil Usmonov</div>
                       <div class="company">Business</div>
@@ -797,9 +791,6 @@
 
                 <div class="item">
                   <div class="reviews-item">
-                    <div class="image">
-                      <img src="images/rev1.png" alt="" />
-                    </div>
                     <div class="info">
                       <div class="name">Farruxbek Abdullayev</div>
                       <div class="company">Designer</div>
@@ -815,9 +806,6 @@
 
                 <div class="item">
                   <div class="reviews-item">
-                    <div class="image">
-                      <img src="images/rev1.png" alt="" />
-                    </div>
                     <div class="info">
                       <div class="name">Saidafzal Abdusattorov</div>
                       <div class="company">Front end developer</div>
@@ -1015,19 +1003,29 @@
               <form id="cform" method="post">
                 <div class="group-val">
                   <div class="label">Full name <strong>*</strong></div>
-                  <input type="text" name="name" placeholder="John Smith" />
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John Smith"
+                  />
                 </div>
                 <div class="group-val">
-                  <div class="label">Email address <strong>*</strong></div>
+                  <div class="label">Phone number <strong>*</strong></div>
                   <input
-                    type="email"
-                    name="email"
-                    placeholder="jon@gmail.com"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="(90) 180-32-26"
                   />
                 </div>
                 <div class="group-val">
                   <div class="label">Message <strong>*</strong></div>
-                  <textarea name="message" placeholder="To Write"></textarea>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="To Write"
+                  ></textarea>
                 </div>
                 <div class="group-bts">
                   <button type="submit" class="btn">
@@ -1102,5 +1100,6 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="./js/send.js"></script>
   </body>
 </html>
