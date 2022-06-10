@@ -1,5 +1,6 @@
 const form = document.querySelector("#cform");
-const formClear = document.getElementById("#cform");
+const button = document.querySelector("#button-send"),
+  toast = document.querySelector(".toast");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -23,4 +24,12 @@ form.addEventListener("submit", function handleSubmit(event) {
   event.preventDefault();
 
   form.reset();
+});
+
+button.addEventListener("click", () => {
+  toast.classList.add("toast-active");
+
+  setTimeout(() => {
+    toast.classList.remove("toast-active");
+  }, 5000);
 });
